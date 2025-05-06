@@ -1,0 +1,109 @@
+.hire-skill {
+    padding: 4rem 0;
+    min-height: calc(100vh - 80px);
+    margin-top: 5rem;
+  }
+  
+  .hire-skill-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .hire-skill-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+  
+  .hire-skill-subtitle {
+    color: var(--text-secondary);
+    font-family: "Cormorant", serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+  
+  .hire-skill-search {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .search-input-container {
+    position: relative;
+    flex: 1;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+    border: 2px solid #9d9d9d;
+    border-radius: var(--border-radius-md);
+    transition: var(--transition);
+    color: aliceblue;
+    background: none;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #e77ffc;
+    box-shadow: 0 0 20px rgba(199, 81, 239, 0.628);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .skill-card-wrapper {
+    height: 100%;
+  }
+  
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+  }
+  
+  .no-results h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-results p {
+    color: var(--text-secondary);
+  }
+  
+  @media (max-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hire-skill-search {
+      flex-direction: column;
+    }
+    
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }

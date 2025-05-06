@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=BioRhyme:wght@200..800&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=BioRhyme:wght@200..800&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+RO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.landing {
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 140vh;
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.096);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero>.vanta-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition: all 1s ease-in;
+  background: scroll;
+}
+
+.hero-content.active {
+  transition: opacity 1s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition-delay: 0.75s;
+  opacity: 1;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.hero-description {
+  font-family: "Cormorant", serif;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  font-style: italic;
+  letter-spacing: 1px;
+  background:none;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  background:none;
+}
+
+.masked-text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: transparent;
+  margin: 3rem 0;
+  background-color: #4152782b;
+  background-image: url('../../assets/souvenirpixels.jpg');
+  background-size: 200%;
+  background-position: 0 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 12s infinite alternate linear;
+}
+
+.btn{
+  background: none;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.features {
+  padding: 6rem 0;
+  height: 100vh;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 10px rgba(218, 101, 250, 0.388);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+}
+
+.feature-item:hover {
+  color: #fff;
+  border: 1px solid #ab03daee;
+  box-shadow: 0px 2px 25px #da65fa63;
+}
+
+.testimonials {
+  padding: 6rem 0;
+}
+
+.testimonial-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+
+.testimonial-card {
+  padding: 1rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author strong {
+  color: var(--text-primary);
+}
+
+.testimonial-author span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.cta p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .features-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.categories-section {
+  padding: 4rem 1rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Big card spans more space */
+.category-card.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Small cards default */
+.category-card.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Card styles */
+.category-card {
+  position: relative;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.category-title,
+.category-icon-placeholder {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Background image classes */
+.web-dev {
+  background-image: url("/src/assets/web-dev.jpg");
+}
+
+.graphic-design {
+  background-image: url("/src/assets/graphic-design.jpg");
+}
+
+.digital-marketing {
+  background-image: url("/src/assets/digital-marketing.jpg");
+}
+
+.writing {
+  background-image: url("/src/assets/writing.jpg");
+}
+
+.ui-ux {
+  background-image: url("/src/assets/ui-ux.jpg");
+}
+
+
+/* === Why Choose Us Section === */
+.why-choose-us-section {
+  padding: 4rem 1rem;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.benefit-item {
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon-placeholder {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.benefit-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-description {
+  color: #cdcaca;
+  font-size: 0.95rem;
+}
+
+/* From Uiverse.io by kamehame-ha */
+.cards {
+  display: flex;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 150px;
+  width: 21rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.cards:hover>.card:not(:hover) {
+  filter: blur(10px);
+}
+
+/* === Footer === */
+.landing-footer {
+  background-color: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.section-headline {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+.button-outline {
+  background: transparent;
+}
+
+.cta-description{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}

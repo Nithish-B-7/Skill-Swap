@@ -1,0 +1,175 @@
+.profile {
+    padding: 4rem 0;
+    background: var(--background-light);
+    min-height: calc(100vh - 80px);
+  }
+  
+  .profile-container {
+    background: var(--background-light);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: var(--card-gradient);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 2rem;
+    box-shadow: var(--shadow-sm);
+    border: 3px solid white;
+  }
+  
+  .profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-location {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .profile-content {
+    display: flex;
+    padding: 2rem;
+  }
+  
+  .profile-main {
+    flex: 2;
+    margin-right: 2rem;
+  }
+  
+  .profile-sidebar {
+    flex: 1;
+  }
+  
+  .profile-section {
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .profile-bio {
+    line-height: 1.6;
+  }
+  
+  .profile-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .contact-section {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-md);
+  }
+  
+  .contact-list {
+    list-style: none;
+  }
+  
+  .contact-list li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  
+  .contact-value {
+    color: var(--text-secondary);
+  }
+  
+  .social-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-list a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    background-color: rgba(236, 235, 235, 0.153);
+    transition: var(--transition);
+    border: 2px solid transparent;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-list a:hover {
+    border: 2px solid #e77ffc;
+    color: white;
+  }
+  
+  @media (max-width: 992px) {
+    .profile-content {
+      flex-direction: column;
+    }
+    
+    .profile-main {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    
+    .profile-avatar {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+    
+    .profile-skills-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .profile-content {
+      padding: 1.5rem;
+    }
+  }

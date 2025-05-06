@@ -1,0 +1,111 @@
+.skill-card {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid #422b61;
+  }
+
+  .skill-card:hover{
+    border: 2px solid #e77ffc;
+    box-shadow: 0 0 20px rgba(199, 81, 239, 0.628);
+  }
+  
+  .skill-card:hover .skill-card-footer{
+    border-top: 2px solid #e77ffc;
+    box-shadow: 0 0 20px rgba(199, 81, 239, 0.628);
+  }
+  
+  .skill-card-content {
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  .skill-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .skill-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .skill-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .skill-price {
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+  
+  .skill-location {
+    color: var(--text-secondary);
+  }
+  
+  .skill-user {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.75rem;
+  }
+  
+  .user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  
+  .user-rating {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .stars {
+    color: #ffb400;
+    margin-right: 0.3rem;
+  }
+  
+  .reviews {
+    color: var(--text-secondary);
+  }
+  
+  .skill-card-footer {
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-top: 2px solid #422b61;
+  }
+  
+  .hire-button {
+    width: 50%;
+  }
