@@ -31,12 +31,12 @@ const App = () => {
       {!hideNavbar && <Navbar />}
       <div className="app-content">
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/home" element={<Landing />} />
+          <Route path="/" element={<Landing />} />
           <Route path="/offer-skill" element={<OfferSkill />} />
           <Route path="/hire-skill" element={<HireSkill />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </div>

@@ -107,7 +107,7 @@ const Signup = () => {
               <div className="auth-separator">
                 <span>Already have an account?</span>
               </div>
-              <Link to="/" className="login-link">
+              <Link to="/login" className="login-link">
                 Sign in
               </Link>
             </div>
