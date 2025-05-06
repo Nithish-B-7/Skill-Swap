@@ -24,7 +24,7 @@ const App = () => {
 
   const location = useLocation();
   const hideNavbar =
-    location.pathname === "/" || location.pathname === "/signup";
+    location.pathname === "/login" || location.pathname === "/signup";
 
   return (
     <div className="app" id="main-scroll" data-scroll-container>
