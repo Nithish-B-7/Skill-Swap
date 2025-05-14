@@ -38,27 +38,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Color-based card styles */
-.card.red {
-  background-color: #ff5c5c; /* Red background color */
-}
-
-.card.blue {
-  background-color: #4a90e2; /* Blue background color */
-}
-
-.card.green {
-  background-color: #6dbf72; /* Green background color */
-}
-
-.card.purple {
-  background-color: #9b59b6; /* Purple background color */
-}
-
-.card.orange {
-  background-color: #f39c12; /* Orange background color */
-}
-
 /* Card Content */
 .card-content {
   text-align: center;

@@ -1,9 +1,6 @@
 "use client";
-
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
-import image1 from "../../assets/image1.jpg";
-import image3 from "../../assets/image3.jpg";
 import "./Parallax.css";
 
 function useParallax(value, distance) {
