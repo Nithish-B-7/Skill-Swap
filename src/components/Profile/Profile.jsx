@@ -1,4 +1,3 @@
-import React from "react";
 import SkillCard from "../../components/SkillCard/SkillCard";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";

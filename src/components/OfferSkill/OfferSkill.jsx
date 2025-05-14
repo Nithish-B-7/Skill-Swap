@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import FormInput from "../../components/FormInput/FormInput";
 import "./OfferSkill.css";
 

@@ -82,7 +82,7 @@
   color: transparent;
   margin: 3rem 0;
   background-color: #4152782b;
-  background-image: url('../../assets/souvenirpixels.jpg');
+  background-image: url('../assets/souvenirpixels.jpg');
   background-size: 200%;
   background-position: 0 50%;
   background-clip: text;
@@ -238,19 +238,16 @@
   padding: 20px;
 }
 
-/* Big card spans more space */
 .category-card.big {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-/* Small cards default */
 .category-card.small {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-/* Card styles */
 .category-card {
   position: relative;
   color: white;
@@ -279,29 +276,27 @@
 }
 
 
-/* Background image classes */
 .web-dev {
-  background-image: url("/src/assets/web-dev.jpg");
+  background-image: url("/assets/web-dev.jpg");
 }
 
 .graphic-design {
-  background-image: url("/src/assets/graphic-design.jpg");
+  background-image: url("/assets/graphic-design.jpg");
 }
 
 .digital-marketing {
-  background-image: url("/src/assets/digital-marketing.jpg");
+  background-image: url("/assets/digital-marketing.jpg");
 }
 
 .writing {
-  background-image: url("/src/assets/writing.jpg");
+  background-image: url("/assets/writing.jpg");
 }
 
 .ui-ux {
-  background-image: url("/src/assets/ui-ux.jpg");
+  background-image: url("/assets/ui-ux.jpg");
 }
 
 
-/* === Why Choose Us Section === */
 .why-choose-us-section {
   padding: 4rem 1rem;
 }
@@ -349,18 +344,6 @@
   gap: 15px;
 }
 
-.cards .red {
-  background-color: #f43f5e;
-}
-
-.cards .blue {
-  background-color: #3b82f6;
-}
-
-.cards .green {
-  background-color: #22c55e;
-}
-
 .cards .card {
   display: flex;
   align-items: center;
@@ -392,7 +375,6 @@
   filter: blur(10px);
 }
 
-/* === Footer === */
 .landing-footer {
   background-color: #1f2937;
   color: #d1d5db;

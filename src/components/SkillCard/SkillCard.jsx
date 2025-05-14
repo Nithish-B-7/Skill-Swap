@@ -1,4 +1,3 @@
-import React from 'react';
 import './SkillCard.css';
 import Button from '../Button/Button'
 

@@ -8,27 +8,27 @@ const Stories = () => {
     {
       name: "Sarah John",
       text: "This platform helped me find tutors for my online education program. Highly recommended!",
-      bg: "/src/assets/bg1.jpg",
+      bg: "/assets/bg1.jpg",
     },
     {
       name: "David McEthan",
       text: "I've been able to earn a full-time income offering my web development skills to clients worldwide.",
-      bg: "/src/assets/bg2.jpg",
+      bg: "/assets/bg2.jpg",
     },
     {
       name: "John Abraham",
       text: "Found an amazing graphic designer for my startup. The quality of talent here is outstanding!",
-      bg: "/src/assets/bg3.jpg",
+      bg: "/assets/bg3.jpg",
     },
     {
       name: "Priya Kannan",
       text: "As a college student, I got freelance writing gigs that helped cover my semester fees!",
-      bg: "/src/assets/bg4.jpg",
+      bg: "/assets/bg4.jpg",
     },
     {
       name: "Michael Lee",
       text: "I bartered my photography skills for coding lessons. It's a brilliant skill exchange system.",
-      bg: "/src/assets/bg5.jpg",
+      bg: "/assets/bg5.jpg",
     },
   ];
 

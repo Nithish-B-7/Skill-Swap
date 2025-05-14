@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SkillCard from '../../components/SkillCard/SkillCard';
 import './HireSkill.css';
 

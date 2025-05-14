@@ -26,7 +26,7 @@ const App = () => {
     return () => {
       scroll.destroy();
     };
-  }, [location.pathname]); // Re-initialize on route change
+  }, [location.pathname]);
 
   const hideNavbar =
     location.pathname === "/login" || location.pathname === "/signup";

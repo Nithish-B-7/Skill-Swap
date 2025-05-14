@@ -45,9 +45,9 @@ function Image({ imageUrl, videoUrl, heading }) {
 
 export default function Parallax() {
   const images = [
-    { videoUrl: "/src/assets/video-1.mp4", heading: "Collaborate & Grow" },
-    { videoUrl: "/src/assets/video-2.mp4", heading: "Share Your Passion" },
-    { videoUrl: "/src/assets/video-3.mp4", heading: "Build Connections" },
+    { videoUrl: "/assets/video-1.mp4", heading: "Collaborate & Grow" },
+    { videoUrl: "/assets/video-2.mp4", heading: "Share Your Passion" },
+    { videoUrl: "/assets/video-3.mp4", heading: "Build Connections" },
   ];
 
   const { scrollYProgress } = useScroll();
