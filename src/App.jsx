@@ -12,6 +12,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const App = () => {
+  const location = useLocation();
+
   useEffect(() => {
     const scroll = new LocomotiveScroll({
       el: document.querySelector("#main-scroll"),
@@ -19,10 +21,13 @@ const App = () => {
       lerp: 0.07,
     });
 
-    return () => scroll.destroy();
-  }, []);
+    scroll.update();
 
-  const location = useLocation();
+    return () => {
+      scroll.destroy();
+    };
+  }, [location.pathname]); // Re-initialize on route change
+
   const hideNavbar =
     location.pathname === "/login" || location.pathname === "/signup";
 

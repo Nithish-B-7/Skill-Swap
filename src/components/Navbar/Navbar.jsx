@@ -15,7 +15,7 @@ const Navbar = () => {
     <div ref={ref1}>
       <nav className={inView1 ? 'animate' : ''}>
         <div className="navbar-container">
-          <Link to="/home" className="navbar-logo">
+          <Link to="/" className="navbar-logo">
             SkillSwap
           </Link>
 

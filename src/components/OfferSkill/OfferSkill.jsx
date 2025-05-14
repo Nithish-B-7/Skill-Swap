@@ -40,10 +40,8 @@ const OfferSkill = () => {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      // Here you would typically handle the form submission
       console.log("Form submitted:", formData);
       setErrors({});
-      // Simulate form submission
       alert("Skill offered successfully!");
     }
   };
@@ -151,7 +149,7 @@ const OfferSkill = () => {
             </div>
 
             <div className="form-actions">
-              <button type="submit" className="button-large">
+              <button type="submit" className="btn-large">
                 Submit Skill
               </button>
             </div>
