@@ -1,0 +1,47 @@
+.parallax-wrapper {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #111827;
+  }
+  
+  .img-container {
+    position: relative;
+    text-align: center;
+    margin: 100px 0;
+  }
+  
+  .parallax-media {
+    width: 80%;
+    height: auto;
+    max-height: 80vh;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .img-container h2 {
+    position: absolute;
+    top: -5%;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 2px 80px #001440;
+    backdrop-filter: blur(3px);
+    padding: 0 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+  }
+  
+  .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #00ffcc;
+    width: 100%;
+    transform-origin: 0%;
+    z-index: 10;
+  }
+  

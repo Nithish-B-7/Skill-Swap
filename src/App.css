@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.button-large{
+  padding: 10px 20px;
+  margin-right: 3rem;
+}
