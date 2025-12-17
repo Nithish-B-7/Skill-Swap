@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import Button from "../../components/Button/Button";
 import VantaBackground from "../VantaBackground/VantaBackground";
 import Parallax from "../Parallax/Parallax";
-import Scroll from "../Scroll/Scroll";
 import "./Landing.css";
 import { GrSecure } from "react-icons/gr";
 import { PiFediverseLogoFill } from "react-icons/pi";
@@ -138,7 +137,6 @@ const Landing = () => {
         </div>
       </section>
 
-      <Scroll />
 
       <Parallax />
 

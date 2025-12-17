@@ -5,28 +5,12 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import OfferSkill from "./components/OfferSkill/OfferSkill";
 import HireSkill from "./components/HireSkill/HireSkill";
-import Profile from "./components/Profile/Profile";
+import Profile from "./components/Profile/Profile"; 
 import "./App.css";
-import { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const App = () => {
   const location = useLocation();
 
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("#main-scroll"),
-      smooth: true,
-      lerp: 0.07,
-    });
-
-    scroll.update();
-
-    return () => {
-      scroll.destroy();
-    };
-  }, [location.pathname]);
 
   const hideNavbar =
     location.pathname === "/login" || location.pathname === "/signup";
